@@ -11,7 +11,7 @@ import EventsPage from "../components/Events/EventsPage";
 import TeamPage from "../components/TeamPage/TeamPage";
 import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
 import Footer from "../components/Common/Footer/Footer";
-import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop";
+import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
 import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration";
 import ForumPage from "../components/DiscussionForum/ForumPage.js";
 import DiscussionPage from "../components/DiscussionForum/DiscussionPage.js";
