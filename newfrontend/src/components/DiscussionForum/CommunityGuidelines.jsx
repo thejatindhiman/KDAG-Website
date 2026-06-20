@@ -1,14 +1,65 @@
-import "./CommunityGuidelines.css";
-import React, { useEffect, useState } from "react";
-import Fade from "../Common/Motion/Fade.js"
+import React from "react";
+import styled from "styled-components";
 import Particless from "../Common/Particles/Particless";
+
+const CommunityGuidelinesContainer = styled.div`
+	padding: 25px;
+	padding-top: 100px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		font-weight: 800;
+		font-size: 50px;
+		font-style: italic;
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: 650px) {
+		padding: 15px;
+		padding-top: 100px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-weight: 800;
+			font-size: 40px;
+			margin-bottom: 35px;
+		}
+	}
+`;
+
+const CommunityGuidelinesContent = styled.div`
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.675);
+	background-color: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	border: solid rgba(255, 255, 255, 0.115) 2px;
+	padding: 50px;
+	text-align: justify;
+	border-radius: 20px;
+	width: 80%;
+
+	@media (max-width: 650px) {
+		font-size: 16px;
+		padding: 30px;
+		border-radius: 10px;
+		width: 95%;
+	}
+`;
 
 const CommunityGuidelines = () => {
 	const particless = React.useMemo(() => <Particless />, []);
 	return (
-		<div class="community-guidelines-container">
+		<CommunityGuidelinesContainer>
 			<h1>Community Guidelines</h1>
-			<div className="community-guidelines">
+			<CommunityGuidelinesContent>
 				<p>
 					Welcome to our Kharagpur Data Analytics Group discussion forum! To
 					maintain a respectful and productive environment, please follow these
@@ -86,9 +137,9 @@ const CommunityGuidelines = () => {
 					We’re here to foster learning and collaboration—thank you for helping
 					us maintain a positive community!
 				</p>
-			</div>
+			</CommunityGuidelinesContent>
 			{particless}
-		</div>
+		</CommunityGuidelinesContainer>
 	);
 };
 

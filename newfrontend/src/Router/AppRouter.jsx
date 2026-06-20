@@ -26,7 +26,7 @@ import GalleryPage from "../components/GalleryPage/GalleyPage.js";
 import ImageGrid from "../components/GalleryPage/ImageGrid/ImageGrid.js";
 import GoogleCallback from "../components/AuthenticationPages/GoogleCallback.js";
 import { AuthProvider } from "../context/AuthContext.js";
-import CommunityGuidelines from "../components/DiscussionForum/CommunityGuidelines.js";
+import CommunityGuidelines from "../components/DiscussionForum/CommunityGuidelines.jsx";
 import PrivacyPolicy from "../components/Privacy Policies/PrivacyPolicy.jsx";
 import RegisterPage from "../components/RegisterPage/RegisterPage.js";
 import Success from "../components/RegisterPage/Success.js";
