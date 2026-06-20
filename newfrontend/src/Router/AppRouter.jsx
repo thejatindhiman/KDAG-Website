@@ -33,7 +33,7 @@ import Success from "../components/RegisterPage/Success.js";
 import Course from "../components/Resources_New/course.js";
 import Register from '../components/AuthenticationPages/Register.js';
 import ManageTeam2 from "../components/ManageTeam/ManageTeam2.js";
-import NotFound from "../components/NotFound/NotFound.js";
+import NotFound from "../components/NotFound/NotFound.jsx";
 import AlumniPage from "../components/AlumniPage/AlumniPage.jsx";
 
 const AppRouter = () => {
