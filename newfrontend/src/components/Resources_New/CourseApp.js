@@ -64,7 +64,7 @@ function App() {
       } catch (err) {
         console.error("Error:", err);
       } finally {
-        setLoading(true);
+        setLoading(false);
       }
     };
 

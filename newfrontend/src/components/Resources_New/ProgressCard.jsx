@@ -42,7 +42,7 @@ const ProgressSummaryCard = ({
           {easyCompleted} / {easyCount} 
         </div>
         <div className="w-full !mt-[0.4rem] max-md:max-w-[320px]">
-          <div className="h-2 flex-1 !bg-black rounded-lg border-[1px_solid_#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden easy-bar">
+          <div className="h-[8px] flex-1 !bg-black rounded-lg border-[1px] border-[#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden easy-bar">
             <div
               className="h-full rounded-lg transition-[width] duration-400 ease-in-out shadow-[0_0_8px_#ff4d4d88] bg-[linear-gradient(90deg,#ff5e5e_0%,#ff1a1a_40%,#ff0066_100%)] bg-[linear-gradient(90deg, #ffbaba, #ff4d4d)]"
               style={{ width: `${getPercent(easyCompleted, easyCount)}%` }}
@@ -59,7 +59,7 @@ const ProgressSummaryCard = ({
           {mediumCompleted} / {mediumCount} 
         </div>
         <div className="w-full !mt-[0.4rem] max-md:max-w-[320px]">
-          <div className="h-2 flex-1 !bg-black rounded-lg border-[1px_solid_#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden medium-bar">
+          <div className="h-[8px] flex-1 !bg-black rounded-lg border-[1px] border-[#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden medium-bar">
             <div
               className="h-full rounded-lg transition-[width] duration-400 ease-in-out shadow-[0_0_8px_#ff4d4d88] bg-[linear-gradient(90deg,#ff5e5e_0%,#ff1a1a_40%,#ff0066_100%)] bg-[linear-gradient(90deg, #ffdab3, #ff944d)]"
               style={{ width: `${getPercent(mediumCompleted, mediumCount)}%` }}
@@ -76,7 +76,7 @@ const ProgressSummaryCard = ({
           {hardCompleted} / {hardCount} 
         </div>
         <div className="w-full !mt-[0.4rem] max-md:max-w-[320px]">
-          <div className="h-2 flex-1 !bg-black rounded-lg border-[1px_solid_#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden hard-bar">
+          <div className="h-[8px] flex-1 !bg-black rounded-lg border-[1px] border-[#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden hard-bar">
             <div
               className="h-full rounded-lg transition-[width] duration-400 ease-in-out shadow-[0_0_8px_#ff4d4d88] bg-[linear-gradient(90deg,#ff5e5e_0%,#ff1a1a_40%,#ff0066_100%)] bg-[linear-gradient(90deg, #ff8686, #c81d1d)]"
               style={{ width: `${getPercent(hardCompleted, hardCount)}%` }}
@@ -88,21 +88,21 @@ const ProgressSummaryCard = ({
   );
 
   return (
-    <div className="flex flex-wrap bg-[rgba(20,0,0,0.6)] rounded-3xl w-92/100 max-w-245 !p-6 !my-4 !mx-auto box-border gap-2 border-[1.5px_solid_rgba(255,64,64,0.6)] transition-[box-shadow_0.4s_ease, transform_0.3s_ease] max-md:flex-col max-md:items-center max-md:!p-4 max-md:gap-6 max-md:w-97/100"
+    <div className="flex flex-wrap bg-[rgba(20,0,0,0.6)] rounded-3xl justify-normal w-92/100 max-w-[980px] !p-6 !my-4 !mx-auto box-border gap-2 border-[1.5px] border-[rgba(255,64,64,0.6)] transition-[box-shadow_0.4s_ease, transform_0.3s_ease] max-md:flex-col max-md:items-center max-md:!p-4 max-md:gap-6 max-md:w-97/100"
     style={{fontFamily : "'Inter', 'JetBrains Mono', monospace"}}>
 
-      <div className="flex-[0_0_auto] max-md:flex-[1_1_20px] flex items-start justify-between max-md:justify-around max-md:border-r-none max-md:border-b-none !px-[1.2rem] min-w-65 max-w-75 max-md:w-full max-md:!p-0 max-md:items-center max-md:text-center max-md:max-w-none">
+      <div className="flex-[0_0_auto] max-md:flex-[1_1_20px] flex items-center justify-between max-md:justify-around max-md:border-r-none max-md:border-b-none !px-[1.2rem] min-w-[260px] max-w-[300px] max-md:w-full max-md:!p-0 max-md:items-center max-md:text-center max-md:max-w-none">
         <div className="flex flex-col justify-center items-start !mr-4 max-md:items-center max-md:text-center max-md:!mr-2">
-          <div className="text-[1.5rem] font-bold !text-[#ff4b4b] !mb-2 text-shadow-[0_0_10px_rgba(255,75,75,0.3)]">
+          <div className="text-[1.2rem] font-bold !text-[#ff4b4b] !mb-2 text-shadow-[0_0_10px_rgba(255,75,75,0.3)]">
             Total Progress
           </div>
           <div className="text-[1.2rem] font-bold !text-[#fdfdfd] text-left max-md:text-[1.45rem]">
             {totalCompleted} / {totalCount} Completed
           </div>
         </div>
-        <div className="relative flex items-center justify-center w-24 h-24 max-md:!mt-4">
+        <div className="relative flex items-center justify-center w-[96px] h-[96px] max-md:!mt-4">
           <svg
-            className="w-24 h-24 block rotate-90"
+            className="w-[96px] h-[96px] block rotate-90"
             width={radius * 2}
             height={radius * 2}
           >
