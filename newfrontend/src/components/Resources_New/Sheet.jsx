@@ -92,10 +92,10 @@ const DropdownSection = ({
   }
 
   return (
-    <div className="bg-[rgba(12, 0, 0, 0.85)] w-92/100 !m-4.5 max-md:w-97/100 max-md:!m-1.25 rouded-[16px] border-[1.5px_solid_rgba(255, 64, 64, 0.25)] opacity-95 shadow-[0_0_12px_rgba(255, 50, 50, 0.2), 0_0_28px_rgba(255, 10, 10, 0.08)] transition-shadow duration-300 ease-[ease]" 
+    <div className="bg-[rgba(12, 0, 0, 0.85)] w-92/100 !m-4.5 max-md:w-97/100 max-md:!m-1.25 rounded-[16px] border-[1.5px] border-[#ff404040] opacity-95 shadow-[0_0_12px_rgba(255,50,50,0.2),0_0_28px_rgba(255,10,10,0.08)] transition-shadow duration-300 ease-in-out" 
     >
       <LoginPrompt open={showPrompt} onClose={() => setShowPrompt(false)} />
-      <div className="max-md:w-full flex items-center !p-5.5 cursor-pointer rounded-2xl border-b-[1px_solid_#ff1a1a44] gap-4.5 hover:shadow-[0_0_10px_#ff1a1a33] hover:bg-[linear-gradient(90deg,#300008_0%,#4d000f_100%)] " onClick={onToggle}>
+      <div className="max-md:w-full flex gap-[18px] items-center !p-[22px] cursor-pointer rounded-2xl border-b-[1px] border-[#ff1a1a44] hover:shadow-[0_0_10px_#ff1a1a33] hover:bg-[linear-gradient(90deg,#300008_0%,#4d000f_100%)] " onClick={onToggle}>
 
         <Chevron open={open} />
 
@@ -103,8 +103,9 @@ const DropdownSection = ({
         style={{fontFamily : '"JetBrains Mono", monospace', color : '#ff3333'}}>
             {title}
         </span>
-        <div className="flex items-center gap-3.5 min-w-37.5">
-          <div className="h-2 flex-1 bg-[#1a0008] rounded-md border-[1px_solid_#ff4d4d44] shadow-[inset_0_0_12px_#ff000044]">
+        <div className="flex items-center gap-[14px] min-w-[180px]">
+          <div className="h-[8px] flex-1 bg-black rounded-[8px] border-[1px] border-[#ff4d4d33] shadow-[inset_0_0_4px_#ff4d4d22] overflow-hidden"
+          >
             <div
               className="h-full bg-[linear-gradient(90deg, #ff1a1a, #ff3b3b, #ff5e5e)] rounded-[6px_0_0_6px] shadow-[0_0_6px_#ff4d4d88] transition-[width] duration-400 ease-in-out"
               style={{ width: `${progressPercent}%` }}

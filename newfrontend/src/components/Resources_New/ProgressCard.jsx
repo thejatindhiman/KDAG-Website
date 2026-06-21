@@ -96,7 +96,7 @@ const ProgressSummaryCard = ({
           <div className="text-[1.2rem] font-bold !text-[#ff4b4b] !mb-2 text-shadow-[0_0_10px_rgba(255,75,75,0.3)]">
             Total Progress
           </div>
-          <div className="text-[1.2rem] font-bold !text-[#fdfdfd] text-left max-md:text-[1.45rem]">
+          <div className="text-[1.2rem] !mt-[4.8px] font-bold !text-[#fdfdfd] text-left max-md:text-[1.45rem]">
             {totalCompleted} / {totalCount} Completed
           </div>
         </div>
