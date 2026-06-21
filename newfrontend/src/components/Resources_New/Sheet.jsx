@@ -79,17 +79,17 @@ const DropdownSection = ({
     onToggleRevision(idx);
   };
 
-  const addDifficultyClass = (e) => {
-    if (e === 'easy') {
-      return 'bg-[linear-gradient(145deg, #00ff99, #00cc77) !text-[#0a0a0a] shadow-[0_0_8px_#00ff9966]'
-    }
-    else if (e === 'medium') {
-      return 'bg-[linear-gradient(145deg, #ffe066, #ffc400)] !text-[#0a0a0a] shadow-[0_0_8px_#ffc40066]'
-    }
-    else if (e==='hard'){
-      return 'bg-[linear-gradient(145deg, #ff3b3b, #c30000)] !text-white shadow-[0_0_8px_#ff3b3b66]'
-    }
-  }
+  // const addDifficultyClass = (e) => {
+  //   if (e === 'easy') {
+  //     return 'bg-[linear-gradient(145deg,#00ff99,#00cc77) !text-[#0a0a0a] shadow-[0_0_8px_#00ff9966]'
+  //   }
+  //   else if (e === 'medium') {
+  //     return 'bg-[linear-gradient(145deg,#ffe066,#ffc400)] !text-[#0a0a0a] shadow-[0_0_8px_#ffc40066]'
+  //   }
+  //   else if (e==='hard'){
+  //     return 'bg-[linear-gradient(145deg,#ff3b3b,#c30000)] !text-white shadow-[0_0_8px_#ff3b3b66]'
+  //   }
+  // }
 
   return (
     <div className="bg-[rgba(12, 0, 0, 0.85)] w-92/100 !m-4.5 max-md:w-97/100 max-md:!m-1.25 rounded-[16px] border-[1.5px] border-[#ff404040] opacity-95 shadow-[0_0_12px_rgba(255,50,50,0.2),0_0_28px_rgba(255,10,10,0.08)] transition-shadow duration-300 ease-in-out" 
@@ -226,7 +226,7 @@ const DropdownSection = ({
                     <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
                       {item.difficulty ? (
                         <span
-                          className={`inline-block !py-1.25 !px-3 text-[0.8rem] font-bold rounded-full text-center shadow-[0_1px_6px_#ff1a1a55] ${addDifficultyClass(item.difficulty.toLowerCase())}`}
+                          className={`inline-block !py-1.25 !px-3 text-[0.8rem] font-bold rounded-full text-center shadow-[0_1px_6px_#ff1a1a55] ${item.difficulty.toLowerCase() === 'easy' ? "bg-[linear-gradient(145deg,#00ff99,#00cc77)] !text-[#0a0a0a] shadow-[0_0_8px_#00ff9966]" : item.difficulty.toLowerCase() === 'medium' ? "bg-[linear-gradient(145deg,#ffe066,#ffc400)] !text-[#0a0a0a] shadow-[0_0_8px_#ffc40066]" : "bg-[linear-gradient(145deg,#ff3b3b,#c30000)] !text-white shadow-[0_0_8px_#ff3b3b66]"}`}
                         >
                           {item.difficulty}
                         </span>
