@@ -7,7 +7,8 @@ import Header from "./Header/Header.js";
 import "./course.css";
 
 function App() {
-  const BASE_URL = process.env.REACT_APP_FETCH_URL;
+  //const BASE_URL = process.env.REACT_APP_FETCH_URL;
+  const BASE_URL =""
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);
@@ -63,7 +64,7 @@ function App() {
       } catch (err) {
         console.error("Error:", err);
       } finally {
-        setLoading(false);
+        setLoading(true);
       }
     };
 

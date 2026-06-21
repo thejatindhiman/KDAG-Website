@@ -3,7 +3,7 @@ import Particless from "../Common/Particles/Particless";
 import "./course.css"; // Import your new CSS
 import App from "./CourseApp"; // Import the CourseApp component
 
-const Course = () => {
+const Course2 = () => {
   return (
     <>
       <Particless />
@@ -13,4 +13,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default Course2;

@@ -31,6 +31,7 @@ import PrivacyPolicy from "../components/Privacy Policies/PrivacyPolicy.jsx";
 import RegisterPage from "../components/RegisterPage/RegisterPage.js";
 import Success from "../components/RegisterPage/Success.js";
 import Course from "../components/Resources_New/course.jsx";
+import Course2 from "../components/Resources_New/course.js";
 import Register from '../components/AuthenticationPages/Register.js';
 import ManageTeam2 from "../components/ManageTeam/ManageTeam2.js";
 import NotFound from "../components/NotFound/NotFound.js";
@@ -78,6 +79,10 @@ const AppRouter = () => {
 							</Route>
 							<Route path={`/register`}>
 								<Register />
+							</Route>
+							<Route
+							path='/dev'>
+								<Course2 />
 							</Route>
 							<Route path="/alumni">
 								<AlumniPage />

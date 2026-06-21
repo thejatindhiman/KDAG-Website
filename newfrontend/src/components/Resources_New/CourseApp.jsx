@@ -3,6 +3,7 @@ import DropdownSection from "./Sheet.jsx";
 import initialSections from "./course.json";
 import ProgressCard from "./ProgressCard.jsx";
 import Header from "./Header/Header.jsx";
+import { keyframes } from "framer-motion";
 
 const App = () => {
 
@@ -206,10 +207,10 @@ const App = () => {
 
   if (loading)
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] w-[100vh] bg-transparent z-1000">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] w-screen bg-transparent z-1000">
 
-        <div className="w-[3.2rem] h-[3.2rem] border-[5px_solid_#ff4040] border-t-[5px_solid_#1a0008] rounded-1/2 shadow-[0_0_18px_#ff404055] animate-spin"
-        style={{marginBottom : '1.5rem'}}></div>
+        <div className="w-[3.2rem] h-[3.2rem] border-[5px] border-[#ff4040] border-t-[#1a0008] rounded-full shadow-[0_0_18px_#ff404055] animate-spin !mb-6"
+        ></div>
 
         <div className="text-[1.5rem] text-center font-bold tracking-[0.08em] text-shadow-[0_2px_12px_#ff404055]"
         style={{color : '#ff4040', fontFamily : '"JetBrains Mono", monospace', marginBottom : '2rem'}}>
