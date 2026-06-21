@@ -32,7 +32,7 @@ import RegisterPage from "../components/RegisterPage/RegisterPage.jsx";
 import Success from "../components/RegisterPage/Success.jsx";
 import Course from "../components/Resources_New/course.js";
 import Register from '../components/AuthenticationPages/Register.js';
-import ManageTeam2 from "../components/ManageTeam/ManageTeam2.js";
+import ManageTeam2 from "../components/ManageTeam/ManageTeam2.jsx";
 import NotFound from "../components/NotFound/NotFound.jsx";
 import AlumniPage from "../components/AlumniPage/AlumniPage.jsx";
 
