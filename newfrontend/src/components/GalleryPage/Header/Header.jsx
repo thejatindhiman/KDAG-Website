@@ -54,13 +54,19 @@ const Header = () => {
             isVisible ? 'show' : ''
           }`}
         >
-          <div className="resources-list-header-title">
+          <div 
+                className="font-bold text-center"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontSize: "4rem",
+                  color: "#ffffff",
+                }}>
             Gallery
           </div>
 
           <div
             className="resources-list-header-subtitle"
-            style={{ fontSize: '1.15rem' }}
+            style={{ fontSize: '1.3rem' }}
           >
             Explore our Event Highlights! From ground breaking ideas to
             creativity sprints, see the moments that make our Events
