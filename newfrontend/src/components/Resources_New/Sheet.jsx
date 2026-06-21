@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState, useContext } from "react";
-import LoginPrompt from "./LoginPrompt";
+import LoginPrompt from "./LoginPrompt.jsx";
 import AuthStatus from "../AuthenticationPages/AuthStatus";
-import "./course.css";
 import { AuthContext } from "../../context/AuthContext";
 const Chevron = ({ open }) => (
   <svg

@@ -1,5 +1,4 @@
 import React from "react";
-import "./LoginPrompt.css";
 
 const LoginPrompt = ({ open, onClose, message }) => {
   if (!open) return null;

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import DropdownSection from "./sheet.js";
+import DropdownSection from "./Sheet.jsx";
 import initialSections from "./course.json";
-import ProgressCard from "./ProgressCard.js";
-import Header from "./Header/Header.js";
+import ProgressCard from "./ProgressCard.jsx";
+import Header from "./Header/Header.jsx";
 
 const App = () => {
 
-  const BASE_URL = process.env.REACT_APP_FETCH_URL;
+  //const BASE_URL = process.env.REACT_APP_FETCH_URL;
+  const BASE_URL = ""
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);

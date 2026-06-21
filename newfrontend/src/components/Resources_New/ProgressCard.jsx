@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./ProgressCard.css";
 
 const ProgressSummaryCard = ({
   totalCompleted,
