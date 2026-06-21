@@ -80,26 +80,46 @@ const DropdownSection = ({
     onToggleRevision(idx);
   };
 
+  const addDifficultyClass = (e) => {
+    if (e === 'easy') {
+      return 'bg-[linear-gradient(145deg, #00ff99, #00cc77) !text-[#0a0a0a] shadow-[0_0_8px_#00ff9966]'
+    }
+    else if (e === 'medium') {
+      return 'bg-[linear-gradient(145deg, #ffe066, #ffc400)] !text-[#0a0a0a] shadow-[0_0_8px_#ffc40066]'
+    }
+    else if (e==='hard'){
+      return 'bg-[linear-gradient(145deg, #ff3b3b, #c30000)] !text-white shadow-[0_0_8px_#ff3b3b66]'
+    }
+  }
+
   return (
     <div className="bg-[rgba(12, 0, 0, 0.85)] w-92/100 !m-4.5 max-md:w-97/100 max-md:!m-1.25 rouded-[16px] border-[1.5px_solid_rgba(255, 64, 64, 0.25)] opacity-95 shadow-[0_0_12px_rgba(255, 50, 50, 0.2), 0_0_28px_rgba(255, 10, 10, 0.08)] transition-shadow duration-300 ease-[ease]" 
     >
       <LoginPrompt open={showPrompt} onClose={() => setShowPrompt(false)} />
       <div className="max-md:w-full flex items-center !p-5.5 cursor-pointer rounded-2xl border-b-[1px_solid_#ff1a1a44] gap-4.5 hover:shadow-[0_0_10px_#ff1a1a33] hover:bg-[linear-gradient(90deg,#300008_0%,#4d000f_100%)] " onClick={onToggle}>
+
         <Chevron open={open} />
-        <span className="dropdown-title">{title}</span>
-        <div className="dropdown-progress">
-          <div className="progress-bar">
+
+        <span className="dropdown-title font-bold text-[1.45rem] text-shadow-[0_0_12px_rgba(255,50,50,0.6)] align-middle !mr-auto wrap-break-word overflow-visible max-w-[calc(100% - 160px)] whitespace-normal max-md:text-[1.9rem]"
+        style={{fontFamily : '"JetBrains Mono", monospace', color : '#ff3333'}}>
+            {title}
+        </span>
+        <div className="flex items-center gap-3.5 min-w-37.5">
+          <div className="h-2 flex-1 bg-[#1a0008] rounded-md border-[1px_solid_#ff4d4d44] shadow-[inset_0_0_12px_#ff000044]">
             <div
-              className="progress-fill"
+              className="h-full bg-[linear-gradient(90deg, #ff1a1a, #ff3b3b, #ff5e5e)] rounded-[6px_0_0_6px] shadow-[0_0_6px_#ff4d4d88] transition-[width] duration-400 ease-in-out"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
-          <span className="progress-text">{`${completed} / ${total}`}</span>
+          <span className="text-[0.92rem] font-bold max-md:text-[0.8rem]"
+          style={{color: '#ff7b7b', fontFamily : '"JetBrains Mono", monospace'}}>
+            {`${completed} / ${total}`}
+          </span>
         </div>
       </div>
       <div
         ref={contentRef}
-        className="dropdown-content"
+        className="bg-[#0f0006] transition-[max-height] duration-400 ease-in-out overflow-hidden rounded-2xl"
         style={{
           maxHeight,
           overflow: "hidden",
@@ -107,21 +127,37 @@ const DropdownSection = ({
         }}
       >
         {shouldRender && (
-          <div className="content-inner">
-            <table className="custom-table">
+          <div className="!p-5.5 overflow-x-auto max-md:!p-2.5">
+            <table className="w-full border border-collapse text-[0.96rem] min-w-160 max-md:text-[0.85rem] max-md:min-w-full"
+            style={{color : '#f3f3f3', fontFamily : '"Fira Code", monospace'}}>
               <thead>
                 <tr>
-                  <th className="center-th">Status</th>
-                  <th className="subtopic">Subtopic</th>
-                  <th className="center-th"> Resources</th>
-                  <th className="center-th">Revision</th>
-                  <th className="center-th">Difficulty</th>
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
+                    Status
+                  </th>
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] subtopic"
+                  style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
+                    Subtopic
+                  </th>
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
+                    Resources
+                  </th>
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
+                    Revision
+                  </th>
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
+                    Difficulty
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {items.map((item, idx) => (
-                  <tr key={idx}>
-                    <td className="center checkbox-cell">
+                  <tr className="hover:bg-[rgba(255,30,30,0.05)]" key={idx}>
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center !pt-4.5 !pb-2.5 !font-['Inter', monospace]">
                       <input
                         type="checkbox"
                         checked={item.completed}
@@ -129,8 +165,10 @@ const DropdownSection = ({
                         className="checkbox"
                       />
                     </td>
-                    <td>{item.name}</td>
-                    <td className="center-icon">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13]  !font-['Inter', monospace]">
+                      {item.name}
+                    </td>
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
                       {item.resource ? (
                         <a
                           href={isLoggedIn ? item.resource : "#"}
@@ -152,9 +190,9 @@ const DropdownSection = ({
                       )}
                     </td>
 
-                    <td className="center">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] center !font-['Inter', monospace]">
                       <button
-                        className={`bookmark-btn${
+                        className={`bg-none border-none cursor-pointer outline-none items-center justify-center flex duration-200 transition-[filter] focus:outline-[2px_solid_#ff4040] ${
                           item.revision ? " active" : ""
                         }`}
                         aria-label="Toggle Revision"
@@ -167,6 +205,7 @@ const DropdownSection = ({
                           viewBox="0 0 22 22"
                           fill={item.revision ? "#ff4040" : "#bbb"}
                           stroke={item.revision ? "#ff4040" : "#bbb"}
+                          className="block w-5.5 h-5.5 max-md:w-4.5 max-md:h-4.5"
                           xmlns="http://www.w3.org/2000/svg"
                           style={{
                             filter: item.revision
@@ -184,10 +223,10 @@ const DropdownSection = ({
                         </svg>
                       </button>
                     </td>
-                    <td className="center-icon">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
                       {item.difficulty ? (
                         <span
-                          className={`difficulty-tag difficulty-${item.difficulty.toLowerCase()}`}
+                          className={`inline-block !py-1.25 !px-3 text-[0.8rem] font-bold rounded-full text-center shadow-[0_1px_6px_#ff1a1a55] ${addDifficultyClass(item.difficulty.toLowerCase())}`}
                         >
                           {item.difficulty}
                         </span>
@@ -198,6 +237,7 @@ const DropdownSection = ({
                   </tr>
                 ))}
               </tbody>
+
             </table>
           </div>
         )}
