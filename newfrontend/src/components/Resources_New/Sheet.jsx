@@ -127,28 +127,28 @@ const DropdownSection = ({
         }}
       >
         {shouldRender && (
-          <div className="!p-5.5 overflow-x-auto max-md:!p-2.5">
-            <table className="w-full border border-collapse text-[0.96rem] min-w-160 max-md:text-[0.85rem] max-md:min-w-full"
-            style={{color : '#f3f3f3', fontFamily : '"Fira Code", monospace'}}>
+          <div className="!p-[22px] overflow-x-auto max-md:!p-[10px">
+            <table className="w-full  text-[0.96rem] min-w-160 max-md:text-[0.85rem] max-md:min-w-full"
+            style={{color : '#f3f3f3', fontFamily : '"Inter", monospace'}}>
               <thead>
                 <tr>
-                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-[14px] !px-[12px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center border-b-[1px] border-[#3a0a13]"
                   style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
                     Status
                   </th>
-                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] subtopic"
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-[14px] !px-[12px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle  tracking-[0.05em] subtopic border-b-[1px] border-[#3a0a13]"
                   style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
                     Subtopic
                   </th>
-                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-[14px] !px-[12px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center border-b-[1px] border-[#3a0a13]"
                   style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
                     Resources
                   </th>
-                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-[14px] !px-[12px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center border-b-[1px] border-[#3a0a13]"
                   style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
                     Revision
                   </th>
-                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-3.5 !px-3 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center"
+                  <th className="text-[0.82rem] bg-[#1c0008] font-bold uppercase !py-[14px] !px-[12px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle  tracking-[0.05em] text-center border-b-[1px] border-[#3a0a13]"
                   style={{color : '#ff6666', fontFamily : '"JetBrains Mono", monospace'}}>
                     Difficulty
                   </th>
@@ -157,7 +157,7 @@ const DropdownSection = ({
               <tbody>
                 {items.map((item, idx) => (
                   <tr className="hover:bg-[rgba(255,30,30,0.05)]" key={idx}>
-                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center !pt-4.5 !pb-2.5 !font-['Inter', monospace]">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13] text-center !pt-4.5 !pb-2.5 !font-['Inter', monospace]">
                       <input
                         type="checkbox"
                         checked={item.completed}
@@ -165,10 +165,10 @@ const DropdownSection = ({
                         className="checkbox"
                       />
                     </td>
-                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13]  !font-['Inter', monospace]">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13]  !font-['Inter', monospace]">
                       {item.name}
                     </td>
-                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
                       {item.resource ? (
                         <a
                           href={isLoggedIn ? item.resource : "#"}
@@ -190,9 +190,9 @@ const DropdownSection = ({
                       )}
                     </td>
 
-                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] center !font-['Inter', monospace]">
+                    <td className="!px-[12px] !py-[14px] max-md:!py-[8px] max-md:!px-[6px] max-md:text-[0.85rem] align-middle font-medium border-b-[1px] text-center border-[#3a0a13] !font-['Inter', monospace]">
                       <button
-                        className={`bg-none border-none cursor-pointer outline-none items-center justify-center flex duration-200 transition-[filter] focus:outline-[2px_solid_#ff4040] ${
+                        className={`bg-none border-none cursor-pointer outline-none inline-flex items-center justify-center duration-200 transition-[filter] focus:outline-[2px_solid_#ff4040] ${
                           item.revision ? " active" : ""
                         }`}
                         aria-label="Toggle Revision"
@@ -205,7 +205,7 @@ const DropdownSection = ({
                           viewBox="0 0 22 22"
                           fill={item.revision ? "#ff4040" : "#bbb"}
                           stroke={item.revision ? "#ff4040" : "#bbb"}
-                          className="block w-5.5 h-5.5 max-md:w-4.5 max-md:h-4.5"
+                          className="block w-[22px] h-[22px] max-md:w-[18px] max-md:h-[18px]"
                           xmlns="http://www.w3.org/2000/svg"
                           style={{
                             filter: item.revision
@@ -223,7 +223,7 @@ const DropdownSection = ({
                         </svg>
                       </button>
                     </td>
-                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-[1px_solid_#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
+                    <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13] text-center align-middle h-full !font-['Inter', monospace]">
                       {item.difficulty ? (
                         <span
                           className={`inline-block !py-1.25 !px-3 text-[0.8rem] font-bold rounded-full text-center shadow-[0_1px_6px_#ff1a1a55] ${addDifficultyClass(item.difficulty.toLowerCase())}`}
