@@ -8,7 +8,7 @@ import LandingPage from "../components/Landing/LandingPage";
 import BlogPage from "../components/Blog/BlogPage";
 import ResourcesPage from "../components/Resources/ResourcesPage";
 import EventsPage from "../components/Events/EventsPage";
-import TeamPage from "../components/TeamPage/TeamPage";
+import TeamPage from "../components/TeamPage/TeamPage.jsx";
 import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
 import Footer from "../components/Common/Footer/Footer";
 import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
