@@ -119,16 +119,20 @@ const CertificateGeneration = () => {
       <Navbar />
       <div className="min-h-[100vh] flex flex-col justify-center items-center gap-[3rem] box-border relative z-1 px-[2rem]! pt-[6rem]! pb-[2rem]!">
         {!generatedPreview && <CertificateStarGuide />}
-        <div className={`rounded-[20px] w-[80%] ${generatedPreview ? "bg-[rgba(30,30,30,0.9)] backdrop-blur-[16px] p-[1.5rem]! max-w-[1000px]" : "bg-[rgba(255,255,255,0.08)] backdrop-blur-[25px] max-w-[900px] py-[3.2rem]! px-[3rem]!"}`}>
+        <div className={`rounded-[20px] w-[80%] border border-[rgba(255,255,255,0.18)]! ${generatedPreview ? "bg-[rgba(30,30,30,0.9)] backdrop-blur-[16px] p-[1.5rem]! max-w-[1000px]" : "bg-[rgba(255,255,255,0.08)] backdrop-blur-[25px] max-w-[900px] py-[3.2rem]! px-[3rem]!"}`}>
           {!generatedPreview ? (
             <>
-              <h1>Get Your Certificate</h1>
+              <h1 className="mb-[2.2rem]! text-white text-[2.1rem]! font-semibold tracking-[0.4px] text-shadow-[0_0_14px_rgba(255,255,255,0.1)] "
+              style={{fontFamily : 'Segoe UI'}}>Get Your Certificate</h1>
               <form className="certificate-form flex flex-col items-center gap-[1.6rem]" onSubmit={handleSubmit}>
                 <input
                   placeholder="Registered Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-[300px] p-[10px]! text-[1.05rem] rounded-0 bg-transparent text-white! border-b border-[rgba(255,255,255,0.2)] transition-all duration-250 ease-in-out focus:border-[#ff1e1e] focus:outline-none focus:shadow-none placeholder:text-[rgba(255,255,255,0.45)] "
+                  style={{fontFamily: 'Segoe UI'}}
+                  className="w-[300px] p-[10px]! text-[1.05rem] rounded-0 bg-transparent text-white!  
+                  border-t-0! border-r-0! border-l-0! border-b! placeholder:text-[1.05rem] 
+                  border-[rgba(255,255,255,0.2)] transition-all duration-250 ease-in-out focus:border-[#ff1e1e]! focus:outline-none focus:shadow-none placeholder:text-[rgba(255,255,255,0.45)]! "
                   required
                 />
                 {/* <input
@@ -138,7 +142,7 @@ const CertificateGeneration = () => {
                   required
                 /> */}
                 <button disabled={loading} 
-                className="mt-[18px]! py-[14px]! px-[28px]! w-full max-w-[15rem] text-white! bg-[linear-gradient(135deg,#ff1e1e,#b00000)] rounded-[16px] border border-[rgba(255,255,255,0.2)] text-[1.05rem] font-bold tracking-[0.6px] cursor-pointer transition-all duration-200 ease-in-out hover:bg-[linear-gradient(135deg,#ff2e2e,#e00000)] hover:translate-y-[-1px] active:translate-y-0 active:shadow-[0_10px_24px_rgba(255,0,0,0.4)] disabled:opacity-60 disabled:cursor-not-allowed ">
+                className="mt-[18px]! py-[14px]! px-[28px]! w-full max-w-[15rem] text-white! bg-[linear-gradient(135deg,#ff1e1e,#b00000)] rounded-[16px]! border border-[rgba(255,255,255,0.2)]! text-[1.05rem] font-bold tracking-[0.6px] cursor-pointer transition-all duration-200 ease-in-out hover:bg-[linear-gradient(135deg,#ff2e2e,#e00000)] hover:translate-y-[-1px] active:translate-y-0 active:shadow-[0_10px_24px_rgba(255,0,0,0.4)] disabled:opacity-60 disabled:cursor-not-allowed ">
                   {loading ? "Verifying..." : "Get Certificate"}
                 </button>
               </form>

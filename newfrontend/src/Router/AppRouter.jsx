@@ -12,7 +12,7 @@ import TeamPage from "../components/TeamPage/TeamPage.jsx";
 import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
 import Footer from "../components/Common/Footer/Footer";
 import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
-import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration";
+import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration.jsx";
 import ForumPage from "../components/DiscussionForum/ForumPage.js";
 import DiscussionPage from "../components/DiscussionForum/DiscussionPage.js";
 import AuthPage from "../components/AuthenticationPages/AuthPage.js";
