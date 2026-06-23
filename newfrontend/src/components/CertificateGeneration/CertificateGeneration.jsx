@@ -2,13 +2,12 @@ import React, { useState, useMemo, useRef } from "react";
 import Navbar from "../Common/Navbar/Navbar";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./CertificateGeneration.css";
 import Particless from "../Common/Particles/Particless";
 import { jsPDF } from "jspdf";
 import certificateTemplate from "../../assets/KDSH2026_sponsor_logos/KDSH26_certificate.png";
 import './Animation.css'
 
-import CertificateStarGuide from "./CertificateStarGuide";
+import CertificateStarGuide from "./CertificateStarGuide.jsx";
 
 const CertificateGeneration = () => {
   const [email, setEmail] = useState("");

@@ -1,6 +1,5 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
-import "./CertificateStarGuide.css";
 
 import repo1 from "./../../assets/llm_repo.png";
 import repo2 from "./../../assets/pathway_repo.png";
