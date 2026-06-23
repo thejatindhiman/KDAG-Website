@@ -46,7 +46,7 @@ const TestiMonials = () => {
     };
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
-            <div className="container mt-5">
+            <div className="container mt-5 ">
                 <div className="row">
                     <div className="col-md-12">
                         <OwlCarousel className="mt-[6%] px-[350px]! max-[480px]:p-0! owl-theme" {...options}>
