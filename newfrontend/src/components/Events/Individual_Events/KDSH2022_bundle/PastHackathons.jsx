@@ -11,11 +11,12 @@ const PastHackathons = () => {
           <Fade left>
             <div className="w-[50%] font-[1.2rem] p-[2rem]! max-[800px]:w-full">
               <div className="text-[2.5rem] font-bold mb-[1rem]! text-[#d9dddc]!">
-                <span className="uppercase">
+                <span className="uppercase"
+                style={{fontFamily : 'Segoe UI'}}>
                   Kharagpur Data Science Hackathon, 2nd Edition
                 </span>
               </div>
-              <div className="text-[#a5a9ae]!"
+              <div className="text-[#a5a9ae]! text-[1.2rem]"
               style={{fontFamily : '"Merriweather", "Times New Roman", serif'}}>
                 Date: 21st November, 2021 - 30th November, 2021 <br /> <br />
                 Sponsored by: RedBus <br /> <br />
@@ -27,7 +28,8 @@ const PastHackathons = () => {
                 rel="noreferrer noopener"
               >
                 <div className="w-[60%] m-auto! bg-[#4e3eff] text-white! flex shadow-[1px_1px_10px_1px_rgba(0,0,0,0.5)] min-w-[20rem] mt-[2.5rem]! hover:bg-[#7f74fb]">
-                  <div className="inline-block p-[1rem]! grow">
+                  <div className="inline-block p-[1rem]! grow text-[1.2rem]"
+                  style={{fontFamily : 'Segoe UI'}}>
                     Event Information
                   </div>
                 </div>
@@ -79,13 +81,14 @@ const PastHackathons = () => {
             </a>
           </Fade>
           <Fade right>
-            <div className="w-[50%] text-[1.2rem] p-[2rem]! max-[800px]:w-full hidden max-[800px]:block past-nonmobile">
+            <div className="w-[50%] text-[2.5rem] p-[2rem]! max-[800px]:w-full max-[800px]:block past-nonmobile">
               <div className="font-[2.5rem] font-bold mb-[1rem]! text-[#d9dddc]! past-nonmobile">
-                <span className="uppercase">
+                <span className="uppercase"
+                style={{fontFamily : 'Segoe UI'}}>
                   Kharagpur Data Science Hackathon, 1st Edition
                 </span>
               </div>
-              <div className="text-[#a5a9ae] past-nonmobile"
+              <div className="text-[#a5a9ae] text-[1.2rem] past-nonmobile"
               style={{fontFamily : '"Merriweather", "Times New Roman", serif'}}>
                 Date: 15th March, 2021 - 1st April, 2021 <br /> <br />
                 Sponsored by: Airtel <br /> <br />
@@ -97,7 +100,8 @@ const PastHackathons = () => {
                 rel="noreferrer noopener"
               >
                 <div className="w-[60%] m-auto! bg-[#4e3eff] text-white! flex shadow-[1px_1px_10px_1px_rgba(0,0,0,0.5)] min-w-[20rem] mt-[2.5rem]! hover:bg-[#7f74fb]">
-                  <div className="inline-block p-[1rem]! grow">
+                  <div className="inline-block p-[1rem]! grow text-[1.2rem]"
+                  style={{fontFamily : 'Segoe UI'}}>
                     Event Information
                   </div>
                 </div>
