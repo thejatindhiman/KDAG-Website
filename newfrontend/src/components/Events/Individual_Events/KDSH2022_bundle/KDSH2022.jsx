@@ -22,7 +22,8 @@ const KDSH2022 = () => {
         <div className="w-[28vmin] h-[28vmin] flex flex-col justify-around py-[1em]! relative text-[16px] rounded-[0.5em] bg-[#21242b] max-[1024px]:h-[26vmin] max-[1024px]:w-[26vmin] max-[1024px]:text-[12px] max-md:w-[calc(50% - 40px)] max-md:h-[30vmin] max-md:text-[14px] max-[480px]:h-[25vmin] max-[480px]:w-full max-[480px]:text-[8px]">
 
           <i className="fas fa-sharp fa-solid fa-graduation-cap text-[#18f98f]! text-[2.5em] text-center" />
-          <span className="text-white! grid font-semibold text-[3em] place-items-center">
+          <span className="text-white! grid font-semibold text-[3em] place-items-center"
+          style={{fontFamily : 'Segoe UI'}}>
             <CountUp
               start={0}
               end={valueDisplays[0]}
@@ -41,7 +42,8 @@ const KDSH2022 = () => {
         </div>
         <div className="w-[28vmin] h-[28vmin] flex flex-col justify-around py-[1em]! relative text-[16px] rounded-[0.5em] bg-[#21242b] max-[1024px]:h-[26vmin] max-[1024px]:w-[26vmin] max-[1024px]:text-[12px] max-md:w-[calc(50% - 40px)] max-md:h-[30vmin] max-md:text-[14px] max-[480px]:h-[25vmin] max-[480px]:w-full max-[480px]:text-[8px">
           <i className="fas fa-regular fa-calendar-days text-[#18f98f]! text-[2.5em] text-center" />
-          <span className="text-white! grid font-semibold text-[3em] place-items-center">
+          <span className="text-white! grid font-semibold text-[3em] place-items-center"
+          style={{fontFamily : 'Segoe UI'}}>
             <CountUp
               start={0}
               end={valueDisplays[1]}
@@ -60,7 +62,8 @@ const KDSH2022 = () => {
         </div>
         <div className="w-[28vmin] h-[28vmin] flex flex-col justify-around py-[1em]! relative text-[16px] rounded-[0.5em] bg-[#21242b] max-[1024px]:h-[26vmin] max-[1024px]:w-[26vmin] max-[1024px]:text-[12px] max-md:w-[calc(50% - 40px)] max-md:h-[30vmin] max-md:text-[14px] max-[480px]:h-[25vmin] max-[480px]:w-full max-[480px]:text-[8px">
           <i className="fas fa-sharp fa-solid fa-indian-rupee-sign text-[#18f98f]! text-[2.5em] text-center" />
-          <span className="text-white! grid font-semibold text-[3em] place-items-center">
+          <span className="text-white! grid font-semibold text-[3em] place-items-center"
+          style={{fontFamily : 'Segoe UI'}}>
             <CountUp
               start={0}
               end={valueDisplays[2]}
@@ -79,7 +82,8 @@ const KDSH2022 = () => {
         </div>
         <div className="w-[28vmin] h-[28vmin] flex flex-col justify-around py-[1em]! relative text-[16px] rounded-[0.5em] bg-[#21242b] max-[1024px]:h-[26vmin] max-[1024px]:w-[26vmin] max-[1024px]:text-[12px] max-md:w-[calc(50% - 40px)] max-md:h-[30vmin] max-md:text-[14px] max-[480px]:h-[25vmin] max-[480px]:w-full max-[480px]:text-[8px">
           <i className="fas fa-solid fa-laptop text-[#18f98f]! text-[2.5em] text-center" />
-          <span className="text-white! grid font-semibold text-[3em] place-items-center">
+          <span className="text-white! grid font-semibold text-[3em] place-items-center"
+          style={{fontFamily : 'Segoe UI'}}>
             <CountUp
               start={0}
               end={valueDisplays[3]}
@@ -96,13 +100,14 @@ const KDSH2022 = () => {
           </span>
         </div>
       </div>
+
       <div className="relative max-[480px]:mb-[100px]!">
-        <h1 className="text-white text-[3.5rem] z-10 text-center max-[480px]:text-[45px]">
+        <h1 className="text-white text-[2.5rem]! z-10 text-center max-[480px]:text-[45px]">
           Know about our sponsor
         </h1>
         <div className="flex justify-center">
           <a href="https://www.axtria.com" target="_blank">
-            <img src={logo} alt="axtria-logo" height="130" className="h-[80px]" />
+            <img src={logo} alt="axtria-logo" height="130" className="h-[130px]" />
           </a>
         </div>
         <p className="text-white! px-[4rem]! text-[25px] leading-[30px] max-[480px]:text-[20px]!"
@@ -116,14 +121,16 @@ const KDSH2022 = () => {
       </div>
       <div className="mt-[180px]!">
         <h1
-        className="text-white! font-[3.5rem] z-10 text-center">
+        className="text-white! text-[2.5rem]! z-10 text-center"
+        style={{fontFamily : 'Segoe UI'}}>
           Testimonials
         </h1>
         <Testimonials />
       </div>
       <div className="past-hackathons">
         <h1
-        className="text-white! font-[45px] z-10 text-center">
+        className="text-white! text-[2.5rem]! font-bold z-10 text-center"
+        style={{fontFamily : 'Segoe UI'}}>
           Past Hackathons
         </h1>
         <PastHackathons />
