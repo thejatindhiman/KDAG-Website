@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header.jsx";
 import Particless from "../../../Common/Particles/Particless";
-import './KDSH2022.css'
 import CountUp from 'react-countup'
 import Testimonials from './Testimonials.jsx'
 import PastHackathons from './PastHackathons.jsx'

@@ -3,6 +3,7 @@ import TestiMonialsDetails from './TestiMonialsDetails.jsx'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import './OwlCarousal.css'
 import userPic from '../../../../assets/pics/naruto.jpg';
 import kshitiz from '../../../../assets/pics/events/kshtitiz.jpg'
 import ritik from '../../../../assets/pics/events/ritik agarwal.jpeg'
@@ -45,11 +46,11 @@ const TestiMonials = () => {
         }
     };
     return (
-        <section id="testimonial" className="testimonials pt-70 pb-70">
-            <div className="container mt-5 ">
+        <section id="testimonial" className="testimonials pb-70 pt-70">
+            <div className="container py-[64px]! mt-5 ">
                 <div className="row">
-                    <div className="col-md-12">
-                        <OwlCarousel className="mt-[6%] px-[350px]! max-[480px]:p-0! owl-theme" {...options}>
+                    <div className="col-md-12 [&_.owl-dots]:mb-[40px]">
+                        <OwlCarousel className="mt-[6%] px-[350px]! max-[480px]:p-0! owl-theme " {...options}>
                             {
                                 testiMonials.length === 0 ?
                                     <div class="item">
