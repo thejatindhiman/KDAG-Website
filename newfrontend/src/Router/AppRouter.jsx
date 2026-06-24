@@ -13,7 +13,7 @@ import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
 import Footer from "../components/Common/Footer/Footer";
 import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
 import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration";
-import ForumPage from "../components/DiscussionForum/ForumPage.js";
+import ForumPage from "../components/DiscussionForum/ForumPage.jsx";
 import DiscussionPage from "../components/DiscussionForum/DiscussionPage.js";
 import AuthPage from "../components/AuthenticationPages/AuthPage.js";
 import CreateDiscussion from "../components/DiscussionForum/CreateDiscussion.js";
