@@ -16,7 +16,7 @@ const CreateComment = () => {
 	const formattedDate = `${day.toString().padStart(2, "0")}-${month
 		.toString()
 		.padStart(2, "0")}-${year.toString().slice(-2)}`;
-
+	const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
 	const { post_id } = useParams();
 	let { currLevel } = useParams();
 	currLevel = decodeURIComponent(currLevel);
@@ -63,7 +63,7 @@ const CreateComment = () => {
 				date: formattedDate,
 			};
 			const response = await fetch(
-				`${process.env.REACT_APP_FETCH_URL}/reply/create_reply/${post_id}`,
+				`${apiUrl}/reply/create_reply/${post_id}`,
 				{
 					method: "POST",
 					headers: {
@@ -98,9 +98,9 @@ const CreateComment = () => {
 			{isLoggedIn && (
 				<div className="block">
 					<div className="h-screen flex items-center justify-center -translate-y-2">
-						<div className="absolute w-[615px] h-[615px] border-[#8bdaff] border-[4px] rounded-[50%] border-dotted top-[110px] max-sm:border-0"></div>
+						<div className="absolute animate-[spin_15s_linear_infinite] bg-[linear-gradient(90deg,#ff0000,#000000,#000000,#ff0000)] w-[605px] h-[605px] rounded-[50%] top-[115px] max-sm:hidden"></div>
 						<Fade right>
-							<div className="!pt-[100px] !mt-[124px] max-[420px]:!pt-[50px] max-[420px]:!mt-[62px] bg-[rgba(255,255,255,0.06)] rounded-full max-sm:rounded-[15px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] overflow-hidden w-[588px] h-[588px] !px-[120px] max-[420px]:!px-[40px] bg-transparent backdrop-blur-[12px] max-[420px]:w-[330px] max-[420px]:flex max-[420px]:items-center">
+							<div className="!pt-[100px] !mt-[124px] max-[420px]:!pt-[50px] max-[420px]:!mt-[62px] !bg-black/70 rounded-full max-sm:rounded-[15px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] overflow-hidden w-[588px] h-[588px] !px-[120px] max-[420px]:!px-[40px] bg-transparent backdrop-blur-[12px] max-[420px]:w-[330px] max-[420px]:flex max-[420px]:items-center">
 								<form onSubmit={handleSubmit}>
 									<h1 className="text-white w-full !text-[30px] !font-bold !mb-[15px]">Post Comment</h1>
 									{/* <input type="text" placeholder="Title" required /> */}
