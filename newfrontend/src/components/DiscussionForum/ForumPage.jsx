@@ -126,8 +126,9 @@ const ForumPage = () => {
 					</div>
 					<div className="[font-family:Poppins,sans-serif] text-[1.2rem] text-center text-[#ddd] w-1/2 min-w-[30rem] mx-auto">
 						Please follow the{" "}
-						<a href="/community-guidelines" className="[text-decoration:underline!important]">
-							Community Guidelines.
+						<a href="/community-guidelines" className="inline-block cursor-pointer group [text-decoration:underline!important]">
+							<span className="group-hover:!text-[#ff8800] transition-all duration-300">Community Guidelines.</span>
+							<div className="h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></div>
 						</a>
 					</div>
 				</div>
