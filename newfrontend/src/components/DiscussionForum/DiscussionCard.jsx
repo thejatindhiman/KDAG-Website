@@ -15,7 +15,7 @@ const DiscussionCard = ({ post, numReplies }) => {
 					<div className="text-cyan-400 text-[15px]">
 						{post.author_name}
 					</div>
-					<div className="font-medium text-[rgb(197,197,197)] max-[500px]:text-xs max-[500px]:leading-[15px] max-[500px]:text-justify group-hover:text-[rgb(140,140,140)]">
+					<div className="font-medium line-clamp-2 text-[rgb(197,197,197)] max-[500px]:text-xs max-[500px]:leading-[15px] max-[500px]:text-justify group-hover:text-[rgb(140,140,140)]">
 						{post.message}
 					</div>
 				</div>
@@ -26,8 +26,8 @@ const DiscussionCard = ({ post, numReplies }) => {
 					</div>
 				</div>
 				<div className="flex-shrink-0 px-3 h-[110px] bg-white/5 rounded-md text-[rgb(197,197,197)] italic whitespace-nowrap flex flex-col items-center justify-center font-medium transition-all duration-500 ml-1 overflow-hidden backdrop-blur-md group-hover:bg-white group-hover:text-[rgb(140,140,140)] max-[500px]:w-[100px]">
-					<div className="font-bold text-white transition-all duration-500 !group-hover:text-black max-[500px]:text-xs max-[500px]:text-wrap max-[500px]:p-2">
-						<strong>Last edited</strong> on <span className="font-bold text-[rgb(255,150,38)]">{post.date}</span>
+					<div className="font-bold text-white transition-all duration-500 max-[500px]:text-xs max-[500px]:text-wrap max-[500px]:p-2">
+						<span className="group-hover:text-gray-400"><strong>Last edited</strong> on </span><span className="font-bold text-[rgb(255,150,38)]">{post.date}</span>
 					</div>
 				</div>
 			</div>

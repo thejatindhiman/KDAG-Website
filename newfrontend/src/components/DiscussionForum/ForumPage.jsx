@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const ForumPage = () => {
 	const particless = React.useMemo(() => <Particless />, []);
 	const { isLoggedIn, setIsLoggedIn, checkAuthStatus } = useContext(AuthContext);
-	
+	const apiUrl2 = import.meta.env.REACT_APP_FETCH_URL;
 	const dummyPosts = [
 		{
 			author_name: "John Developer",
@@ -80,7 +80,7 @@ const ForumPage = () => {
 		const fetchPosts = async () => {
 			try {
 				const response = await fetch(
-					`${process.env.REACT_APP_FETCH_URL}/get_posts`,
+					`${apiUrl2}/get_posts`,
 					{
 						method: "GET",
 					}
@@ -97,6 +97,7 @@ const ForumPage = () => {
 				}
 			} catch (error) {
 				console.error("Error fetching posts:", error);
+				console.log(import.meta.env);
 				console.log("Using dummy posts as fallback");
 				setPosts(dummyPosts);
 				setFilteredPosts(dummyPosts);
@@ -135,11 +136,11 @@ const ForumPage = () => {
 				<div className="w-full">
 					<div className="!mx-[50px] !my-[10px] !mb-[50px] flex items-center justify-between rounded-[50px] border !border-white/20 !p-[10px] max-[600px]:mx-[16px] max-[600px]:flex-col max-[600px]:gap-4">
 						<div className="flex justify-center">
-							<div className="flex flex-row items-center rounded-[50px] transition-all duration-[800ms]">
+							<div className="group flex flex-row items-center rounded-[50px] transition-all duration-[800ms]">
 								<button className="inline-flex cursor-none appearance-none items-center justify-center overflow-hidden !rounded-[60px] border-0 bg-[linear-gradient(to_right,#ff8800,#ffdaaa,#30dd8a,#269660)] bg-[length:300%_100%] !px-[20px] !py-[10px] font-semibold italic transition-all duration-300 hover:bg-[position:100%_0] hover:[text-shadow:0_0_10px_white] max-[600px]:h-10 max-[600px]:w-10 max-[600px]:!rounded-full max-[600px]:p-0">
 									<Link to="/create_discussion" className="flex h-full w-full cursor-none items-center justify-center">
 										<img src={icon_add} alt="New Discussion Icon" className="mr-[20px] h-[20px] max-[600px]:m-0 max-[600px]:h-[20px] max-[600px]:w-[20px]" />
-										&nbsp;<span className="max-[600px]:hidden">New Discussion</span>
+										&nbsp;&nbsp;<span className="max-[600px]:hidden text-black group-hover:text-white">New Discussion</span>
 									</Link>
 								</button>
 							</div>
@@ -155,7 +156,7 @@ const ForumPage = () => {
 							/>
 							<button className="group relative inline-flex h-10 !cursor-none appearance-none items-center justify-center overflow-hidden !rounded-[50px] border !border-[#E69C00] bg-black px-4 py-2 font-bold text-white transition-all duration-300 max-[600px]:text-[12px]">
 								<span className="absolute inset-0 bg-[linear-gradient(to_right,black,black,#ff8800,#ffdaaa)] bg-[length:300%_100%] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:bg-[position:100%_0]"></span>
-								<span className="relative z-10 transition-all duration-300 group-hover:[text-shadow:0_0_10px_white]">
+								<span className="relative z-10 transition-all duration-300 group-hover:[text-shadow:0_0_10px_white] group-hover:text-black">
 									Search
 								</span>
 							</button>
