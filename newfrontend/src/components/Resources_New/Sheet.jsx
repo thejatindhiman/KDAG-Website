@@ -162,7 +162,7 @@ const DropdownSection = ({
                         type="checkbox"
                         checked={item.completed}
                         onChange={() => handleCheckboxClick(idx)}
-                        className="checkbox"
+                        className="w-[18px]! h-[18px]!"
                       />
                     </td>
                     <td className="!px-3 !py-3.5 max-md:!py-2 max-md:!px-1.5 max-md:text-[0.85rem] align-middle font-medium border-b-[1px] border-[#3a0a13]  !font-['Inter', monospace]">
