@@ -92,14 +92,14 @@ const DropdownSection = ({
   // }
 
   return (
-    <div className="bg-[rgba(12, 0, 0, 0.85)] w-92/100 !m-4.5 max-md:w-97/100 max-md:!m-1.25 rounded-[16px] border-[1.5px] border-[#ff404040] opacity-95 shadow-[0_0_12px_rgba(255,50,50,0.2),0_0_28px_rgba(255,10,10,0.08)] transition-shadow duration-300 ease-in-out" 
+    <div className="bg-[rgba(12, 0, 0, 0.85)] !m-4.5 max-md:w-97/100 max-md:!m-1.25 rounded-[16px] border-[1.5px] border-[#ff404040] opacity-95 shadow-[0_0_12px_rgba(255,50,50,0.2),0_0_28px_rgba(255,10,10,0.08)] transition-shadow duration-300 ease-in-out" 
     >
       <LoginPrompt open={showPrompt} onClose={() => setShowPrompt(false)} />
-      <div className="max-md:w-full flex gap-[18px] items-center !p-[22px] cursor-pointer rounded-2xl border-b-[1px] border-[#ff1a1a44] hover:shadow-[0_0_10px_#ff1a1a33] hover:bg-[linear-gradient(90deg,#300008_0%,#4d000f_100%)] " onClick={onToggle}>
+      <div className="max-md:w-full block gap-[18px] items-center !px-[1.5rem] !py-[0.5rem] cursor-pointer rounded-2xl border-b-[1px] border-[#ff1a1a44] hover:shadow-[0_0_10px_#ff1a1a33] hover:bg-[linear-gradient(90deg,#300008_0%,#4d000f_100%)] " onClick={onToggle}>
 
         <Chevron open={open} />
 
-        <span className="dropdown-title font-bold text-[1.45rem] text-shadow-[0_0_12px_rgba(255,50,50,0.6)] align-middle !mr-auto wrap-break-word overflow-visible max-w-[calc(100% - 160px)] whitespace-normal max-md:text-[1.9rem]"
+        <span className="font-bold text-[1.45rem] text-shadow-[0_0_12px_rgba(255,50,50,0.6)] align-middle !mr-auto  overflow-visible max-w-[calc(100% - 160px)] whitespace-normal max-md:text-[1.9rem]"
         style={{fontFamily : '"JetBrains Mono", monospace', color : '#ff3333'}}>
             {title}
         </span>

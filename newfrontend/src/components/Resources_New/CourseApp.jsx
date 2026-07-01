@@ -234,7 +234,7 @@ const App = () => {
         hardCompleted={hardCompleted}
         hardCount={hardCount}
       />
-      <div className="w-full max-w-3xl mt-6">
+      <div className="w-full max-w-[980px]!">
         {sections.map((section, idx) => (
           <DropdownSection
             key={idx}
