@@ -1,13 +1,14 @@
-// App.js
-import { useEffect, useState } from "react";
-import DropdownSection from "./sheet.js";
+import React, { useEffect, useState } from "react";
+import DropdownSection from "./Sheet.jsx";
 import initialSections from "./course.json";
-import ProgressCard from "./ProgressCard.js";
-import Header from "./Header/Header.js";
-import "./course.css";
+import ProgressCard from "./ProgressCard.jsx";
+import Header from "./Header/Header.jsx";
+import { keyframes } from "framer-motion";
 
-function App() {
-  const BASE_URL = import.meta.env.VITE_REACT_APP_FETCH_URL;
+const App = () => {
+
+  const BASE_URL = import.meta.env.REACT_APP_FETCH_URL;
+
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);
@@ -70,7 +71,7 @@ function App() {
     fetchData();
   }, [BASE_URL]);
 
-  // Progress calculations
+
   const totalSubtopics = initialSections.reduce(
     (total, section) => total + section.items.length,
     0
@@ -203,16 +204,25 @@ function App() {
     }
   };
 
+
   if (loading)
     return (
-      <div className="custom-loading-container">
-        <div className="custom-loading-spinner"></div>
-        <div className="custom-loading-text">Loading Resources...</div>
+      <div className="flex flex-col items-center justify-center min-h-[60vh] w-screen bg-transparent z-1000">
+
+        <div className="w-[3.2rem] h-[3.2rem] border-[5px] border-[#ff4040] border-t-[#1a0008] rounded-full shadow-[0_0_18px_#ff404055] animate-spin !mb-6"
+        ></div>
+
+        <div className="text-[1.5rem] text-center font-bold tracking-[0.08em] text-shadow-[0_2px_12px_#ff404055]"
+        style={{color : '#ff4040', fontFamily : '"JetBrains Mono", monospace', marginBottom : '2rem'}}>
+          Loading Resources...
+        </div>
       </div>
     );
 
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-black px-2 py-8 app-container">
+  
+    
+      return (
+    <div className="min-h-screen flex flex-col items-center justify-start px-2 py-8 app-container">
       <Header />
       <ProgressCard
         totalCompleted={totalCompleted}
@@ -224,7 +234,7 @@ function App() {
         hardCompleted={hardCompleted}
         hardCount={hardCount}
       />
-      <div className="w-full max-w-3xl mt-6">
+      <div className="w-full max-w-[980px]!">
         {sections.map((section, idx) => (
           <DropdownSection
             key={idx}
@@ -243,4 +253,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
