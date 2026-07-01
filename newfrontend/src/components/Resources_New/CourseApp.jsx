@@ -7,8 +7,8 @@ import { keyframes } from "framer-motion";
 
 const App = () => {
 
-  //const BASE_URL = process.env.REACT_APP_FETCH_URL;
-  const BASE_URL = ""
+  const BASE_URL = import.meta.env.REACT_APP_FETCH_URL;
+  
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);

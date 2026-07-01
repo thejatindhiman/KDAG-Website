@@ -25,7 +25,7 @@ const DocxLoader = () => {
       name = "ML Resources";
     }
 
-    const backendUrl = `${process.env.REACT_APP_FETCH_URL}/docx/view_docx?name=${encodeURIComponent(
+    const backendUrl = `${import.meta.env.REACT_APP_FETCH_URL}/docx/view_docx?name=${encodeURIComponent(
       name
     )}&url=${encodeURIComponent(docxUrl)}`;
 
