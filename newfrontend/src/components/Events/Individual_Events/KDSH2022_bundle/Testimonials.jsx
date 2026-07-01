@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import TestiMonialsDetails from './TestiMonialsDetails'
+import TestiMonialsDetails from './TestiMonialsDetails.jsx'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import './OwlCarousal.css'
 import userPic from '../../../../assets/pics/naruto.jpg';
 import kshitiz from '../../../../assets/pics/events/kshtitiz.jpg'
 import ritik from '../../../../assets/pics/events/ritik agarwal.jpeg'
-import './KDSH2022.css'
 
 const TestiMonials = () => {
   
@@ -46,20 +46,23 @@ const TestiMonials = () => {
         }
     };
     return (
-        <section id="testimonial" className="testimonials pt-70 pb-70">
-            <div className="container mt-5">
+        <section id="testimonial" className="testimonials pb-70 pt-70">
+            <div className="container py-[64px]! mt-5 ">
                 <div className="row">
-                    <div className="col-md-12">
-                        <OwlCarousel className="owl-carousel owl-theme" {...options}>
+                    <div className="col-md-12 [&_.owl-dots]:mb-[40px]">
+                        <OwlCarousel className="mt-[6%] px-[350px]! max-[480px]:p-0! owl-theme " {...options}>
                             {
                                 testiMonials.length === 0 ?
                                     <div class="item">
                                         <div class="shadow-effect">
-                                            <img class="img-circle" src={userPic} />
+                                            <img class="rounded-[50%] align-middle max-w-[200px] min-h-[200px] transform-3d m-[0_auto_17px]! max-[480px]:max-w-[150px]! max-[480px]:max-h-[150px]!" src={userPic} />
 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                            <p
+                                            className='text-white!'>
+                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            </p>
                                         </div>
-                                        <div class="testimonial-name">
+                                        <div class="m-[5px_auto_0]! table w-auto bg-[linear-gradient(100deg,#ff8066,#ff918d)] py-[9px]! px-[12px]! text-center text-white! shadow-[0_9px_18px_rgba(0,0,0,0.12),0_5px_7px_rgba(0,0,0,0.5)] text-[20px]">
                                             <h5>Ayush Aryan</h5>
                                             <small>India</small>
                                         </div>

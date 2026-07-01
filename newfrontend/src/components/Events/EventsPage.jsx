@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header/Header";
-import EventsList from "./Events/EventsList";
+import Header from "./Header/Header.jsx";
+import EventsList from "./Events/EventsList.jsx";
 import Particless from "../Common/Particles/Particless";
 
 const EventsPage = () => {
