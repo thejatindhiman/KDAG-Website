@@ -87,7 +87,7 @@ const CertificateGeneration = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/certificate_lookup`,
+        `${import.meta.env.REACT_APP_FETCH_URL}/kdsh/certificate_lookup`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
