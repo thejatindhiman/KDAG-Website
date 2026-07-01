@@ -14,11 +14,11 @@ export default function CertificateStarGuide() {
             <div className="max-w-[100%] my-0! mx-auto!">
 
                 <div className="text-center mb-[32px]!">
-                    <div className="bg-[rgba(255,255,255,0.08)] backdrop-blur-[5px] border border-[rgba(255,255,255,0.18)] rounded-[20px] p-[30px]! text-center mb-[40px]! text-white!">
-                        <div className="text-[28px] font-bold bg-[linear-gradient(135deg,#f87171,#fca5a5)] bg-clip-text mb-[8px]! max-[640px]:text-[24px]" style={{ fontSize: "24px", marginBottom: "12px" }}>
+                    <div className="bg-[rgba(255,255,255,0.08)] backdrop-blur-[5px] border! border-[rgba(255,255,255,0.18)]! rounded-[20px] p-[30px]! text-center mb-[40px]! text-white!">
+                        <div className="text-[28px] font-bold text-[#F87B7B]! bg-clip-text mb-[12px]! max-[640px]:text-[24px]" style={{ fontSize: "24px", marginBottom: "12px" }}>
                             Thank you for participating in KDSH 2026!
                         </div>
-                        <div className="text-[28px] font-bold bg-[linear-gradient(135deg,#38bdf8,#2563eb)] bg-clip-text mb-[8px]! text-transparent" style={{ lineHeight: "1.6", maxWidth: "700px", margin: "0 auto" }}>
+                        <div className="text-[16px] text-[rgba(148,163,184)]! bg-clip-text mb-[8px]!" style={{ lineHeight: "1.6", maxWidth: "700px", margin: "0 auto", fontFamily : 'Segoe UI' }}>
                             Round 1 has ended. You can download your Certificate of Participation by entering your registered email below.
                         </div>
                     </div>
