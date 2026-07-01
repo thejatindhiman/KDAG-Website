@@ -222,7 +222,7 @@ const App = () => {
   
     
       return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-black px-2 py-8 app-container">
+    <div className="min-h-screen flex flex-col items-center justify-start px-2 py-8 app-container">
       <Header />
       <ProgressCard
         totalCompleted={totalCompleted}
