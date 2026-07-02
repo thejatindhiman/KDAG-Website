@@ -28,9 +28,12 @@ import GoogleCallback from "../components/AuthenticationPages/GoogleCallback.js"
 import { AuthProvider } from "../context/AuthContext.js";
 import CommunityGuidelines from "../components/DiscussionForum/CommunityGuidelines.jsx";
 import PrivacyPolicy from "../components/Privacy Policies/PrivacyPolicy.jsx";
-import RegisterPage from "../components/RegisterPage/RegisterPage.js";
-import Success from "../components/RegisterPage/Success.js";
-import Course from "../components/Resources_New/course.jsx";
+
+
+import RegisterPage from "../components/RegisterPage/RegisterPage.jsx";
+import Success from "../components/RegisterPage/Success.jsx";
+import Course from "../components/Resources_New/Course.jsx";
+
 import Register from '../components/AuthenticationPages/Register.js';
 import ManageTeam2 from "../components/ManageTeam/ManageTeam2.jsx";
 import NotFound from "../components/NotFound/NotFound.jsx";
