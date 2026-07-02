@@ -19,4 +19,5 @@ export default defineConfig({
       },
     },
   },
+  envPrefix: ['VITE_', 'REACT_'],
 })

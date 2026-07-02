@@ -12,31 +12,25 @@ import TeamPage from "../components/TeamPage/TeamPage.jsx";
 import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
 import Footer from "../components/Common/Footer/Footer";
 import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
-import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration.jsx";
-import ForumPage from "../components/DiscussionForum/ForumPage.js";
-import DiscussionPage from "../components/DiscussionForum/DiscussionPage.js";
+import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration";
+import ForumPage from "../components/DiscussionForum/ForumPage.jsx";
+import DiscussionPage from "../components/DiscussionForum/DiscussionPage.jsx";
 import AuthPage from "../components/AuthenticationPages/AuthPage.js";
-import CreateDiscussion from "../components/DiscussionForum/CreateDiscussion.js";
+import CreateDiscussion from "../components/DiscussionForum/CreateDiscussion.jsx";
 import UserProfileSelf from "../components/UserPages/UserProfileSelf.js";
 import UserProfilePublic from "../components/UserPages/UserProfilePublic.js";
 import EditProfile from "../components/UserPages/EditProfile.js";
 import Logout from "../components/Common/Logout/Logout.js";
-import CreateComment from "../components/DiscussionForum/CreateComment.js";
+import CreateComment from "../components/DiscussionForum/CreateComment.jsx";
 import GalleryPage from "../components/GalleryPage/GalleyPage.js";
 import ImageGrid from "../components/GalleryPage/ImageGrid/ImageGrid.jsx";
 import GoogleCallback from "../components/AuthenticationPages/GoogleCallback.js";
 import { AuthProvider } from "../context/AuthContext.js";
 import CommunityGuidelines from "../components/DiscussionForum/CommunityGuidelines.jsx";
 import PrivacyPolicy from "../components/Privacy Policies/PrivacyPolicy.jsx";
-<<<<<<< HEAD
-import RegisterPage from "../components/RegisterPage/RegisterPage.jsx";
-import Success from "../components/RegisterPage/Success.jsx";
-import Course from "../components/Resources_New/course.js";
-=======
 import RegisterPage from "../components/RegisterPage/RegisterPage.js";
 import Success from "../components/RegisterPage/Success.js";
 import Course from "../components/Resources_New/course.jsx";
->>>>>>> yash-ml_sheet
 import Register from '../components/AuthenticationPages/Register.js';
 import ManageTeam2 from "../components/ManageTeam/ManageTeam2.jsx";
 import NotFound from "../components/NotFound/NotFound.jsx";
