@@ -45,7 +45,7 @@ const members_2026 = [
         name: 'Subarno Maji',
         image: 'images/Alumni_All_Images/Graduating Batch of 2026/Subarno_Maji.jpg',
 		email: "subarnomaji@gmail.com",
-		facebook: "https://www.facebook.com/profile.php?id=100083622261232&mibextid=ZbWKwL",
+		facebook: "",
         twitter: '',
         workplace: '',
         linkedin: 'https://www.linkedin.com/in/subarno-maji-6076a425b/'
