@@ -84,7 +84,7 @@ const members_2026 = [
 
     {
         name: "Aumogh Sengupta",
-        image: 'images/Alumni_All_Images/Graduating Batch of 2026/Aumogh_Sengupta.jgp',
+        image: 'images/Alumni_All_Images/Graduating Batch of 2026/Aumogh_Sengupta.jpg',
 		email: "aumogh24@gmail.com",
 		facebook: "https://www.facebook.com/aumogh.sengupta",
 		twitter: "",
