@@ -19,7 +19,7 @@ const members = [
     {
         image: "images/Heads_2026_photos/Arul.jpeg",
         name: "Arul Rana",
-        email: "arul@iitkgp.ac.in",
+        email: "ksarulrana@gmail.com",
         linkedin: "https://www.linkedin.com/in/arul-rana/",
         instagram: "https://www.instagram.com/arulrana1212?igsh=NHN1dHE3dHZlemRz",
     },
