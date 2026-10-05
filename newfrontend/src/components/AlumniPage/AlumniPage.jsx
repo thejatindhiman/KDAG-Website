@@ -11,6 +11,7 @@ import members_2022 from "./AlumniStatic2022.js";
 import members_2023 from "./AlumniStatic2023.js";
 import members_2024 from "./AlumniStatic2024.js";
 import members_2025 from "./AlumniStatic2025.js";
+import members_2026 from "./AlumniStatic2026.js";
 import Header from "./Header.jsx";
 import Fade from "../Common/Motion/Fade.js"
 import Particless from "../Common/Particles/Particless.js";
@@ -20,6 +21,17 @@ const AlumniPage2 = () => {
 		<>
 			
 			<Header/>
+
+			<Fade left>
+				<AlumniPageHeading text="Graduating Batch Of 2026" />
+			</Fade>{" "}
+			<div className="flex w-92/100 max-w-248 m-auto flex-wrap justify-center rounded-[30px] overflow-hidden backdrop-blur-[6px] [&::-webkit-scrollbar]:w-0"
+            style={{ paddingTop : '50px', paddingBottom : '65px'}}>
+				{members_2026?.map((member) => {
+					return <TeamCardAlumni key={member.id} member={member} />;
+				})}
+			</div>
+
 			<Fade left>
 				<AlumniPageHeading text="Graduating Batch Of 2025" />
 			</Fade>{" "}
