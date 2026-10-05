@@ -1,5 +1,4 @@
 import React from "react";
-import "./EventsCard.css";
 import Fade from "../../Common/Motion/Fade.js"
 import { Link } from "react-router-dom";
 
@@ -7,23 +6,26 @@ const EventsCard = ({ event }) => {
   return (
       <div>
           <Fade bottom>
-              <div className="events-card" >
+              <div 
+                className="flex w-[90%] !my-[3rem] !mx-auto rounded-[15px] bg-[rgba(255,255,255,0.042)] border-t border-l border-[rgba(255,255,255,0.1)] backdrop-blur-[5px] transition-all duration-400 hover:bg-[rgba(104,58,58,0.15)] hover:shadow-[0_0_25px_rgba(250,57,70,1)] hover:-translate-y-[5px] max-[900px]:block max-[900px]:max-w-[30rem]" >
+
                   <div
-                      className="events-card-left"
+                      className="w-[40%] bg-cover bg-top relative max-[900px]:w-full max-[900px]:h-[20rem]"
                       style={{ backgroundImage: `url(${event.image})` }}
                   >
                       {/* <img src={event.image} alt="event-poster" /> */}
                   </div>
-                  <div className="events-card-right">
-                      <div className="events-card-title">
+                  <div className="w-[60%] text-center !p-[1.5rem] max-[900px]:w-full">
+
+                      <div className="text-[1.5rem] font-bold !m-[1rem] !text-white transition-all duration-400">
                           {event.title || "Event Title"}
                       </div>
-                      <div className="events-card-location">
+                      <div className="!mt-[1rem] !text-[#777]">
                           <i class="fas fa-map-marker-alt"></i>{" "}
                           {event.location || "location, platform"}
                       </div>
                       {event.date && (
-                          <div className="events-card-date">
+                          <div className="!mt-[0.5rem] !text-[#777]">
                               <i class="far fa-calendar-alt"></i> {event.date}
                           </div>
                       )}
@@ -47,36 +49,39 @@ const EventsCard = ({ event }) => {
                           <div />
                       )} */}
                       
-                      <div className="events-card-button-outerMost">
+                      <div className="!m-auto flex justify-center">
                             {event.resources && <a
                                 href={event.resources || "#"}
                                 target="_blank"
+                                className="no-underline"
                                 rel="noreferrer noopener">
-                                <div className="events-card-button">
-                                    <div className="events-card-button2">
+
+                                <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0]">
+                                    <div className="inline-block !p-[1rem] grow-1">
                                         {event.infotext
                                             ? event.infotext
                                             : "View Resources"}
                                     </div>
-                                    <div className="events-card-button1">
+                                    <div className="inline-block !p-[1rem]">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </div>
                             </a>}
                       </div>
 
-                      <div className="events-card-button-outerMost">
+                      <div className="!m-auto flex justify-center">
                             {event.link && <a
                                 href={event.link || "#"}
                                 target="_blank"
+                                className="no-underline"
                                 rel="noreferrer noopener">
-                                <div className="events-card-button">
-                                    <div className="events-card-button2">
+                                <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0">
+                                    <div className="inline-block !p-[1rem] grow-1">
                                         {event.infotext
                                             ? event.infotext
                                             : "Event Information"}
                                     </div>
-                                    <div className="events-card-button1">
+                                    <div className="inline-block !p-[1rem]">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </div>
@@ -84,10 +89,10 @@ const EventsCard = ({ event }) => {
                       </div>
                       {event.certificates ? (
                         
-                      <div className="events-card-button-outerMost">
+                      <div className="!m-auto flex justify-center">
                           <Link to={event.certificates}>
-                              <div className="events-card-button">
-                                  <div className="events-card-button2">
+                              <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0">
+                                  <div className="inline-block !p-[1rem] grow-1">
                                       Generate Certificate
                                   </div>
                                   {/* <div className="events-card-button1">
