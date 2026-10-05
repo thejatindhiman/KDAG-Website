@@ -1,6 +1,6 @@
 import React from "react";
 import EventsCard from "./EventsCard.jsx";
-import events from "./EventsStatic.js";
+import events from "./EventsStatic.jsx";
 
 const dummy = [0, 1, 2, 3, 4, 5, 6, 7];
 
