@@ -5,22 +5,9 @@ import ProgressCard from "./ProgressCard.jsx";
 import Header from "./Header/Header.jsx";
 import { keyframes } from "framer-motion";
 
-<<<<<<< HEAD
-<<<<<<< HEAD:newfrontend/src/components/Resources_New/CourseApp.js
+
 function App() {
   const BASE_URL = import.meta.env.VITE_REACT_APP_FETCH_URL;
-=======
-const App = () => {
-
-  const BASE_URL = import.meta.env.REACT_APP_FETCH_URL;
-  
->>>>>>> yash-ml_sheet:newfrontend/src/components/Resources_New/CourseApp.jsx
-=======
-const App = () => {
-
-  const BASE_URL = import.meta.env.REACT_APP_FETCH_URL;
-
->>>>>>> yash-newalumns
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);
