@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
       {/* Hero banner */}
       <div className="relative pt-8 sm:pt-12 pb-10 sm:pb-12 px-4 sm:px-6 text-center bg-linear-to-b from-[#1a0000] to-[#0a0a0a]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(220,38,38,0.15),transparent_70%)]" />
-        <h1 className="relative text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white">
+        <h1 className="relative text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white pt-5">
           Privacy <span className="text-red-500">Policy</span>
         </h1>
         <p className="relative mt-2 sm:mt-3 text-gray-400 text-xs sm:text-sm">Last updated: October 22, 2024</p>
@@ -284,7 +284,7 @@ const PrivacyPolicy = () => {
           <Para>If you have any questions about this Privacy Policy, You can contact us:</Para>
           <a
             href="mailto:iitkgpkdag@gmail.com"
-            className="inline-flex items-center gap-2 mt-1 px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-red-600/20 border border-red-500/40 text-red-400 hover:bg-red-600/30 hover:text-red-300 transition-colors text-xs sm:text-sm font-medium break-all sm:break-normal"
+            className="inline-flex items-center gap-2 mt-1 px-4 sm:px-5 py-2 mb-5 sm:py-2.5 rounded-lg bg-red-600/20 border border-red-500/40 text-red-400 hover:bg-red-600/30 hover:text-red-300 transition-colors text-xs sm:text-sm font-medium break-all sm:break-normal"
           >
             iitkgpkdag@gmail.com
           </a>

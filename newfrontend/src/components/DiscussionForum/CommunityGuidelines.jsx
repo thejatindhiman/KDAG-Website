@@ -14,7 +14,7 @@ const CommunityGuidelinesContainer = styled.div`
 	h1 {
 		font-weight: 800;
 		font-size: 50px;
-		font-style: italic;
+		// font-style: italic;
 		margin-bottom: 50px;
 	}
 
@@ -58,7 +58,7 @@ const CommunityGuidelines = () => {
 	const particless = React.useMemo(() => <Particless />, []);
 	return (
 		<CommunityGuidelinesContainer>
-			<h1>Community Guidelines</h1>
+			<h1>Community <span className="text-red-600">Guidelines</span></h1>
 			<CommunityGuidelinesContent>
 				<p>
 					Welcome to our Kharagpur Data Analytics Group discussion forum! To
