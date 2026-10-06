@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className={`h-[30rem] !pt-[1rem] bg-cover shadow-[0_2px_10px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+      <div className={`relative top-25 h-[30rem] !pt-[1rem] bg-cover shadow-[0_2px_10px_rgba(0,0,0,0.25)] transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"}`}>
         <div class="text-[4rem] font-bold text-center !text-white"
         style={{fontFamily : 'Poppins, sans-serif'}}>
           EVENTS

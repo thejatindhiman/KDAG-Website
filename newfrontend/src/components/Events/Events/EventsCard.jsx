@@ -7,14 +7,21 @@ const EventsCard = ({ event }) => {
       <div>
           <Fade bottom>
               <div 
-                className="flex w-[90%] !my-[3rem] !mx-auto rounded-[15px] bg-[rgba(255,255,255,0.042)] border-t border-l border-[rgba(255,255,255,0.1)] backdrop-blur-[5px] transition-all duration-400 hover:bg-[rgba(104,58,58,0.15)] hover:shadow-[0_0_25px_rgba(250,57,70,1)] hover:-translate-y-[5px] max-[900px]:block max-[900px]:max-w-[30rem]" >
+                className="flex w-[90%] !my-[3rem] !mx-auto rounded-[15px] bg-[rgba(255,255,255,0.042)] border-t border-l border-[rgba(255,255,255,0.1)] backdrop-blur-[5px] transition-all duration-400 hover:bg-[rgba(104,58,58,0.15)] hover:shadow-[0_0_25px_rgba(250,57,70,1)] hover:-translate-y-[5px] max-[900px]:block max-[900px]:max-w-[30rem] items-center" >
+                    <div className="w-[40%] relative max-[900px]:w-full">
+                        <img
+                            src={event.image}
+                            alt=""
+                            className="w-[60%] h-auto block"
+                        />
+                        </div>
 
-                  <div
+                  {/* <div
                       className="w-[40%] bg-cover bg-top relative max-[900px]:w-full max-[900px]:h-[20rem]"
                       style={{ backgroundImage: `url(${event.image})` }}
                   >
-                      {/* <img src={event.image} alt="event-poster" /> */}
-                  </div>
+                      <img src={event.image} alt="event-poster" />
+                  </div> */}
                   <div className="w-[60%] text-center !p-[1.5rem] max-[900px]:w-full">
 
                       <div className="text-[1.5rem] font-bold !m-[1rem] !text-white transition-all duration-400">
@@ -56,7 +63,8 @@ const EventsCard = ({ event }) => {
                                 className="no-underline"
                                 rel="noreferrer noopener">
 
-                                <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0]">
+                                <div className="w-full mx-auto bg-[linear-gradient(90deg,#9a2323b9,#a14a55,#9a2323b9)]
+                                bg-[length:300%_100%]  text-white flex shadow-[1px_1px_10px_1px_rgba(0,0,0,0.5)] min-w-[20rem] mt-6 border-0 rounded-[30px] transition-all duration-700 mt-4 cursor-pointer">
                                     <div className="inline-block !p-[1rem] grow-1">
                                         {event.infotext
                                             ? event.infotext
@@ -75,7 +83,8 @@ const EventsCard = ({ event }) => {
                                 target="_blank"
                                 className="no-underline"
                                 rel="noreferrer noopener">
-                                <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0">
+                                <div className="w-full mx-auto bg-[linear-gradient(90deg,#9a2323b9,#a14a55,#9a2323b9)]
+                                bg-[length:300%_100%]  text-white flex shadow-[1px_1px_10px_1px_rgba(0,0,0,0.5)] min-w-[20rem] mt-6 border-0 rounded-[30px] transition-all duration-700 mt-4 cursor-pointer">
                                     <div className="inline-block !p-[1rem] grow-1">
                                         {event.infotext
                                             ? event.infotext
@@ -91,7 +100,8 @@ const EventsCard = ({ event }) => {
                         
                       <div className="!m-auto flex justify-center">
                           <Link to={event.certificates}>
-                              <div className="w-full !m-auto hover:scale-[1.03] bg-[position:100%_0">
+                              <div className="w-full mx-auto bg-[linear-gradient(90deg,#9a2323b9,#a14a55,#9a2323b9)]
+                                bg-[length:300%_100%]  text-white flex shadow-[1px_1px_10px_1px_rgba(0,0,0,0.5)] min-w-[20rem] mt-6 border-0 rounded-[30px] transition-all duration-700 mt-4 cursor-pointer">
                                   <div className="inline-block !p-[1rem] grow-1">
                                       Generate Certificate
                                   </div>
