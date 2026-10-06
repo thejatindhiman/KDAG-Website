@@ -23,7 +23,7 @@ const UserProfilePublic = () => {
 		const fetchUserInfo = async () => {
 			try {
 				const response = await fetch(
-					`${import.meta.env.REACT_APP_FETCH_URL}/user/profile/${user_id}`,
+					`${import.meta.env.VITE_FETCH_URL}/user/profile/${user_id}`,
 					{
 						method: "GET",
 					}

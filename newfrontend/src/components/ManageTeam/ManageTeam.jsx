@@ -63,7 +63,7 @@ const ManageTeam = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/edit_team_details`,
+        `${process.env.VITE_FETCH_URL}/kdsh/edit_team_details`,
         {
           method: "PATCH",
           headers: {
@@ -116,7 +116,7 @@ const ManageTeam = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/delete_team`,
+        `${process.env.VITE_FETCH_URL}/kdsh/delete_team`,
         {
           method: "DELETE",
           headers: {
@@ -160,7 +160,7 @@ const ManageTeam = () => {
       }
 
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/get_user_teams`,
+        `${process.env.VITE_FETCH_URL}/kdsh/get_user_teams`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -207,7 +207,7 @@ const ManageTeam = () => {
       }
 
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/finalize_team`,
+        `${process.env.VITE_FETCH_URL}/kdsh/finalize_team`,
         {
           method: "PATCH",
           headers: {
@@ -272,7 +272,7 @@ const ManageTeam = () => {
       }
 
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/remove_member`,
+        `${process.env.VITE_FETCH_URL}/kdsh/remove_member`,
         {
           method: "POST",
           headers: {
@@ -349,7 +349,7 @@ const ManageTeam = () => {
       }
 
       const res = await fetch(
-        `${process.env.REACT_APP_FETCH_URL}/kdsh/leave_team`,
+        `${process.env.VITE_FETCH_URL}/kdsh/leave_team`,
         {
           method: "POST",
           headers: {

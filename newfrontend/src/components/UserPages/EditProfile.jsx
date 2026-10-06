@@ -7,7 +7,7 @@ import profile_pic from '../../assets/svgs/profile_pic.svg';
 
 const EditProfile = () => {
   const particless = React.useMemo(() => <Particless />, []);
-  const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
+  const apiUrl = import.meta.env.VITE_FETCH_URL;
   const { user_id } = useParams();
   const token = localStorage.getItem("access_token");
   const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);

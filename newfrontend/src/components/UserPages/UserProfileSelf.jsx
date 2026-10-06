@@ -28,7 +28,7 @@ const UserProfileSelf = () => {
 		const fetchUserInfo = async () => {
 			try {
 				const response = await fetch(
-					`${import.meta.env.REACT_APP_FETCH_URL}/user/profile_self/${user_id}`,
+					`${import.meta.env.VITE_FETCH_URL}/user/profile_self/${user_id}`,
 					{
 						method: "GET",
 						headers: {
