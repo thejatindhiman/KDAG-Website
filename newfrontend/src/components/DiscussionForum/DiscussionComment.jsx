@@ -14,7 +14,7 @@ import already_downvoted_img from "./../../assets/pics/already_downvoted.png";
 
 
 const DiscussionComment = ({ post_id, level, reply }) => {
-	const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
+	const apiUrl = import.meta.env.VITE_FETCH_URL;
 	const [showReplies, setShowReplies] = useState(false);
 	const [userId, setUserId] = useState("empty");
 	const history = useHistory();

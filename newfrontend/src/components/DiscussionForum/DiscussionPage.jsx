@@ -27,7 +27,7 @@ const DiscussionPage = () => {
 	const token = localStorage.getItem("access_token");
 	const [showDelete, setShowDelete] = useState(false);
 	const [currLevel, setCurrLevel] = useState("none");
-	const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
+	const apiUrl = import.meta.env.VITE_FETCH_URL;
 
 	const dummyPost = {
 		author_name: "Kdag Bot",

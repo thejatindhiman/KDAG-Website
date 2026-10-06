@@ -60,7 +60,7 @@ const Register = () => {
     console.log(user_data,token)
 
     const response = await fetch(
-      `${process.env.REACT_APP_FETCH_URL}/user/signup`,
+      `${import.meta.env.VITE_FETCH_URL}/user/signup`,
       {
         method: "POST",
         headers: {
@@ -123,7 +123,6 @@ const Register = () => {
                     type="text"
                     placeholder="Username"
                     required
-                    disabled
                     value={register_userName}
                     onChange={(e) => setRegister_userName(e.target.value)}
                   />

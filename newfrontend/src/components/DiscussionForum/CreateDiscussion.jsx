@@ -15,7 +15,7 @@ const CreateDiscussion = () => {
 	const formattedDate = `${day.toString().padStart(2, "0")}-${month
 		.toString()
 		.padStart(2, "0")}-${year.toString().slice(-2)}`;
-	const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
+	const apiUrl = import.meta.env.VITE_FETCH_URL;
 	const [rDirect, setRDirect] = useState(false);
 	const [userId, setUserId] = useState("empty");
 	const token = localStorage.getItem("access_token");

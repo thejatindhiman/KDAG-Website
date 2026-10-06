@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
       const access_token = localStorage.getItem("access_token");
       if (access_token) {
         const response = await fetch(
-          `${process.env.REACT_APP_FETCH_URL}/user/auth/google/status`,
+          `${import.meta.env.VITE_FETCH_URL}/user/auth/google/status`,
           {
             method: "GET",
             headers: {

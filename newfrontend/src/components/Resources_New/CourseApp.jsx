@@ -7,7 +7,7 @@ import { keyframes } from "framer-motion";
 
 
 function App() {
-  const BASE_URL = import.meta.env.VITE_REACT_APP_FETCH_URL;
+  const BASE_URL = import.meta.env.VITE_FETCH_URL;
 
   const [sections, setSections] = useState(initialSections);
   const [loading, setLoading] = useState(true);

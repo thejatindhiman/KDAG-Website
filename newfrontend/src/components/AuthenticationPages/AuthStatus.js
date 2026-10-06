@@ -11,7 +11,7 @@ const AuthStatus = () => {
 		const checkAuthStatus = async () => {
 			try {
 				const response = await fetch(
-					`${process.env.REACT_APP_FETCH_URL}/user/auth/google/status`,
+					`${import.meta.env.VITE_FETCH_URL}/user/auth/google/status`,
 					{
 						method: "GET",
 						credentials: "include",

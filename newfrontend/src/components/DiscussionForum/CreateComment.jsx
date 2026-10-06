@@ -16,7 +16,7 @@ const CreateComment = () => {
 	const formattedDate = `${day.toString().padStart(2, "0")}-${month
 		.toString()
 		.padStart(2, "0")}-${year.toString().slice(-2)}`;
-	const apiUrl = import.meta.env.REACT_APP_FETCH_URL;
+	const apiUrl = import.meta.env.VITE_FETCH_URL;
 	const { post_id } = useParams();
 	let { currLevel } = useParams();
 	currLevel = decodeURIComponent(currLevel);

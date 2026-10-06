@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const ForumPage = () => {
 	const particless = React.useMemo(() => <Particless />, []);
 	const { isLoggedIn, setIsLoggedIn, checkAuthStatus } = useContext(AuthContext);
-	const apiUrl2 = import.meta.env.REACT_APP_FETCH_URL;
+	const apiUrl2 = import.meta.env.VITE_FETCH_URL;
 	const dummyPosts = [
 		{
 			author_name: "John Developer",

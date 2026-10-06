@@ -11,7 +11,7 @@ const GoogleAuthCallback = () => {
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const code = queryParams.get("code");
-    fetch(`${process.env.REACT_APP_FETCH_URL}/user/auth/google/callback`, {
+    fetch(`${import.meta.env.VITE_FETCH_URL}/user/auth/google/callback`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,6 +27,7 @@ const GoogleAuthCallback = () => {
       })
       .then((data) => {
         const { access_token, user_info } = data;
+        console.log(user_info)
         localStorage.setItem("access_token", access_token);
         setUid(data.uid);
 
