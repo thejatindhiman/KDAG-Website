@@ -1,5 +1,5 @@
 import React from 'react'
-import Fade from "../Common/Motion/Fade.js";
+import Fade from "../Common/Motion/fade.jsx";
 
 const TeamCardAlumni = ({ member }) => {
   return (

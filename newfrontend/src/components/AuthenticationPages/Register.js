@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import Particless from "../Common/Particles/Particless";
 import "./AuthPage.css";
-import Fade from "../Common/Motion/Fade.js"
+import Fade from "../Common/Motion/fade.jsx"
 
 const Register = () => {
   const location = useLocation();

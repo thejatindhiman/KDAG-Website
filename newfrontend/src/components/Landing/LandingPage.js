@@ -15,7 +15,7 @@ import { Typewriter } from "react-simple-typewriter";
 // import SponsorsSection from "./KDSH2026/SponsorsSection.js";
 
 import Content from "./Content/Content.js";
-import Fade from "../Common/Motion/Fade.js"
+import Fade from "../Common/Motion/fade.jsx"
 import Particless from "../Common/Particles/Particless";
 // import video1 from "./Video/final.mp4";
 // import Header from "./Header/Header";

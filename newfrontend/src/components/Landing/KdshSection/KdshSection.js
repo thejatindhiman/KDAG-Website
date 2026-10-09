@@ -1,5 +1,5 @@
 import "./KdshSection.css";
-import Fade from "../../Common/Motion/Fade.js";
+import Fade from "../../Common/Motion/fade.jsx";
 import { useEffect, useRef, useState } from "react";
 
 const useCounterOnVisible = (target, duration = 1500) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Content.css";
 import {Link} from "react-router-dom";
-import Fade from "../../Common/Motion/Fade.js"
+import Fade from "../../Common/Motion/fade.jsx"
 
 import blogPic from "./../../../assets/pics/Blogs.png";
 import eventsPic from "./../../../assets/pics/Events.png";
