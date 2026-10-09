@@ -24,9 +24,9 @@ const Logout = () => {
             <button 
             onClick={handle_logout} 
             style={{ cursor: "auto" }}
-            className="rounded-[60px] cursor-auto px-3 py-[10px] font-semibold border-none bg-[linear-gradient(to_right,#ff8800,#ffdaaa,#30dd8a,#269660)] bg-[length:300%_100%] transition-all duration-300 hover:bg-[position:100%_0] hover:[text-shadow:0_0_10px_white]">
+            className="!rounded-[60px] cursor-auto px-3 !py-[10px] font-semibold border-none bg-[linear-gradient(to_right,#ff8800,#ffdaaa,#30dd8a,#269660)] bg-[length:300%_100%] transition-all duration-300 hover:bg-[position:100%_0] hover:[text-shadow:0_0_10px_white] flex gap ">
                 <img src={logout_icon} alt="img" className="h-[25px]" /> 
-                <span className="max-md:hidden">Logout</span>
+                <span className="max-md:hidden text-black">Logout</span>
             </button>
         </div>
     );
