@@ -9,7 +9,7 @@ import BlogPage from "../components/Blog/BlogPage";
 import ResourcesPage from "../components/Resources/ResourcesPage";
 import EventsPage from "../components/Events/EventsPage";
 import TeamPage from "../components/TeamPage/TeamPage.jsx";
-import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.js";
+import ScrollToTop from "../components/Common/ScrollToTop/ScrollToTop.jsx";
 import Footer from "../components/Common/Footer/Footer";
 import WinterWorkshop from "../components/WinterWorkshop/WinterWorkshop.jsx";
 import CertificateGeneration from "../components/CertificateGeneration/CertificateGeneration";
@@ -20,7 +20,7 @@ import CreateDiscussion from "../components/DiscussionForum/CreateDiscussion.jsx
 import UserProfileSelf from "../components/UserPages/UserProfileSelf.jsx";
 import UserProfilePublic from "../components/UserPages/UserProfilePublic.jsx";
 import EditProfile from "../components/UserPages/EditProfile.jsx";
-import Logout from "../components/Common/Logout/Logout.js";
+import Logout from "../components/Common/Logout/Logout.jsx";
 import CreateComment from "../components/DiscussionForum/CreateComment.jsx";
 import ImageGrid from "../components/GalleryPage/ImageGrid/ImageGrid.jsx";
 import GalleryPage from "../components/GalleryPage/GalleyPage.jsx";
