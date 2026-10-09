@@ -1,5 +1,4 @@
 import React from "react";
-import "./ResourcesList.css";
 import ResourcesCard from "./ResourcesCard";
 import resources from "./ResourcesStatic";
 
@@ -10,7 +9,7 @@ const ResourcesList = () => {
   // const [blogs, setBlogs] = useState();
 
   return (
-    <div class="resources-list-cards">
+    <div className="flex !p-[36px] flex-wrap gap-15 justify-center">
       {resources?.map((resource) => {
         return <ResourcesCard key={resource.id} resource={resource} />;
       }) ||
