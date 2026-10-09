@@ -3,7 +3,6 @@ import Fade from "../../Common/Motion/fade.jsx"
 import { AuthContext } from "../../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import logout_icon from "../../../assets/pics/logout.png";
-import "./Logout.css";
 
 const Logout = () => {
     const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
